@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/logo-184x69.png" type="image/x-icon">
   <meta name="description" content="">
-  <title>Home</title>
+  <title>'TRANZITPLUS.COM' перегон автомобилей из Литвы в СНГ</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -22,6 +22,12 @@
   
 </head>
 <body>
+    <div class="call-back-btn" id="btn-callback-phone-icon">
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="profilepicture"><img src="assets/images/phone.png" width="100%" height="100%"></div>
+    </div>
+
   <section class="menu cid-qXvPrje0IY" once="menu" id="menu1-0">
 
     
@@ -64,11 +70,112 @@
                 
                 <li class="nav-item"><a class="nav-link link text-white display-4" href="#features9-z">
                     КОНТАКТЫ</a></li></ul>
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" href="#"><span class="mbri-success mbr-iconfont mbr-iconfont-btn"></span>
+            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-secondary display-4" id="callback2-btn"><span class="mbri-success mbr-iconfont mbr-iconfont-btn"></span>
                     Заявка на подбор автомобиля</a></div>
         </div>
     </nav>
 </section>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" id="success-modal">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+        <div class="modal-header">
+            <p class="modal-title text-center" style="text-align: left;font-size: 20px;" id="success-modalLabel">Спасибо! Наш менеджер свяжется с Вами</p>
+            <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div class="modal-footer">
+            <div style="text-align: center !important;">
+                <button type="button" class="btn btn-default"  style="padding-left: 20px; padding-right: 20px;" id="success-modal-ok">OK</button>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <p class="modal-title" id="myModalLabel" style="font-size: 16px; text-align: left;">Укажите номер телефона и мы свяжемся с Вами!<p>
+            <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div data-form-type="formoid">
+            <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта TRANZITPLUS.COM" onsubmit="$('#callback-modal').modal('hide');$('#success-modal').modal('show');">
+                <div class="modal-body">
+                    <input type="hidden" data-form-email="true" value="UPOhsCEtnjS5E3VpXbX/AcOwUnzfcr9ILnw0nbbeoWBUd1ns6UzsUCqEH0hRK9Mbur0KlshdwgOAXpEaXGmePRjZwTY9WL/E8tkTrf7UoxWndHNtr4ox4pYAYIFwfcjh">
+                        <div class="text-center">
+                            <div class="form-group" data-for="phone">
+                                <label class="sr-only" for="inputNumber">Телефон</label>
+                                <input type="tel" class="form-control input-lg" style="width: 100%;" name="phone" data-form-field="Телефон" id="inputNumber5" placeholder="+7 (___) ___-__-__" required onclick="$('#inputNumber5').val('+7');">
+                                <button type="submit" class="btn btn-md btn-secondary display-4" style="width: 100%;margin-left:0px !important; margin-right:0px !important; background-color: #E11C1C !important;">ЗАКАЗАТЬ ЗВОНОК</button>
+                            </div>
+                        </div>
+
+                        <div class="form-group" data-for="goal">
+                            <input type="text" class="form-control input-lg" style="display: none;" name="goal" data-form-field="Причина" id="inputSite" placeholder="" value="Клиент заказал обратный звонок">
+                        </div>
+                        <div class="form-group" data-for="time">
+                            <input type="text" class="form-control input-lg" style="display: none;" name="time" data-form-field="Время у клиента" id="inputTime" placeholder="" value="">
+                        </div>
+                </div>
+            </form>
+        </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+        <div class="modal-header">
+            <p class="modal-title" id="myModalLabel" style="font-size: 16px; text-align: left;">Создайте заявку на подбор автомобиля сейчас!<p>
+            <button type="button" class="close" style="float: right;" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        </div>
+        <div data-form-type="formoid">
+                <div class="form-container">
+                        <div class="media-container-column">
+                            <div data-form-alert="" hidden="" class="align-center">Спасибо! Мы скоро свяжемся с Вами!</div>
+                            <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта TRANZITPLUS.COM"><input type="hidden" name="email" data-form-email="true" value="UPOhsCEtnjS5E3VpXbX/AcOwUnzfcr9ILnw0nbbeoWBUd1ns6UzsUCqEH0hRK9Mbur0KlshdwgOAXpEaXGmePRjZwTY9WL/E8tkTrf7UoxWndHNtr4ox4pYAYIFwfcjh" data-form-field="Email">
+                                <div data-for="name">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control px-3" name="name" data-form-field="Name" placeholder="Имя *" required="" id="name-header15-7" style="border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+                                <div data-for="email">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control px-3" name="email" data-form-field="Email" placeholder="Email *" required="" id="email-header15-7" style="border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+                                <div data-for="phone">
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control px-3" name="phone" data-form-field="Phone" placeholder="Телефон *" id="phone-header15-7" style="border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+        
+                                <div data-for="brand">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control px-3" name="brand" data-form-field="Brand" placeholder="Марка А\М *" id="phone-header15-7" style="border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+        
+                                <div data-for="type">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control px-3" name="type" data-form-field="Type" placeholder="Под ключ\Выездная\Эксперт на день" id="phone-header15-7" style="border: 1px solid #ccc;">
+                                    </div>
+                                </div>
+        
+                                <div class="form-group" data-for="message">
+                                    <textarea type="text" class="form-control px-3" name="message" rows="4" placeholder="Бюджет \ Комплектация в свободной форме" data-form-field="Message" id="message-header15-7" style="border: 1px solid #ccc;"></textarea>
+                                </div>
+                                <span class="input-group-btn"><button type="submit" class="btn btn-secondary btn-form display-4" style="width: 100%;">СОЗДАТЬ ЗАЯВКУ НА ПОДБОР</button></span>
+                            </form>
+                        </div>
+                    </div>
+        </div>
+        </div>
+    </div>
+</div>
 
 <section class="cid-qXvPs8govr mbr-fullscreen mbr-parallax-background" id="header2-1">
 
@@ -82,7 +189,7 @@
                 <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">ПОДБОР И ПЕРЕГОН АВТОМОБИЛЕЙ</h1>
                 
                 <p class="mbr-text pb-3 mbr-fonts-style display-5">Покупка автомобиля в Литве по выгодным ценам, все проверки и отчеты. Доставим автомобиль в любую точку СНГ. Автовозом или своим ходом! Узнайте подробнее!</p>
-                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" href="#">ЗАЯВКА НА ПОДБОР АВТО</a>
+                <div class="mbr-section-btn"><a class="btn btn-md btn-secondary display-4" id="callback2-btn2">ЗАЯВКА НА ПОДБОР АВТО</a>
                     <a class="btn btn-md btn-white-outline display-4" href="#header9-5">ПОДРОБНЕЕ</a></div>
             </div>
         </div>
@@ -102,7 +209,7 @@
         <div class="media-container-column mbr-white col-md-7">
             <h1 class="mbr-section-title align-left mbr-bold pb-3 mbr-fonts-style display-1">О НАС</h1>
             <h3 class="mbr-section-subtitle align-left mbr-light pb-3 mbr-fonts-style display-2"><a href="http://tranzitplus.com" class="text-success">TRANZITPLUS.COM</a></h3>
-            <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">Компания на рынке продаж Авто более 10 лет. Мы занимаемся покупкой Авто в Литве для Вас! <br>Вы можете заказать любой автомобиль, и мы гарантируем что он будет в порядке! <br>Проверка автомобилей в базах по угонам, залогам, кредитам. Техническая проверка! Криминальная проверка!Полный отчет по крашенным деталям! Всё это мы берем на себя! Доставка Авто в любую точку СНГ ! Также Мы работаем в рассрочку!</p>
+            <p class="mbr-text align-left pb-3 mbr-fonts-style display-5">Компания на рынке продаж Авто более 10 лет. Мы занимаемся покупкой Авто в Литве для Вас! <br>Вы можете заказать любой автомобиль, и мы гарантируем что он будет в порядке! <br>Проверка автомобилей в базах по угонам, залогам, кредитам. Техническая проверка! Криминальная проверка! Всё это мы берем на себя! Доставка Авто в любую точку СНГ ! Также Мы работаем в рассрочку!</p>
             <div class="mbr-section-btn align-left"><a class="btn btn-md btn-secondary display-4" href="#">НАШИ КОНТАКТЫ</a>
                 <a class="btn btn-md btn-white-outline display-4" href="#content5-24">ВСЕ УСЛУГИ</a></div>
         </div>
@@ -119,7 +226,7 @@
             <div class="form-container">
                 <div class="media-container-column" data-form-type="formoid">
                     <div data-form-alert="" hidden="" class="align-center">Спасибо! Мы скоро свяжемся с Вами!</div>
-                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Заявка с сайта TRANZITPLUS.COM"><input type="hidden" name="email" data-form-email="true" value="UPOhsCEtnjS5E3VpXbX/AcOwUnzfcr9ILnw0nbbeoWBUd1ns6UzsUCqEH0hRK9Mbur0KlshdwgOAXpEaXGmePRjZwTY9WL/E8tkTrf7UoxWndHNtr4ox4pYAYIFwfcjh" data-form-field="Email">
+                    <form class="mbr-form" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта TRANZITPLUS.COM"><input type="hidden" name="email" data-form-email="true" value="UPOhsCEtnjS5E3VpXbX/AcOwUnzfcr9ILnw0nbbeoWBUd1ns6UzsUCqEH0hRK9Mbur0KlshdwgOAXpEaXGmePRjZwTY9WL/E8tkTrf7UoxWndHNtr4ox4pYAYIFwfcjh" data-form-field="Email">
                         <div data-for="name">
                             <div class="form-group">
                                 <input type="text" class="form-control px-3" name="name" data-form-field="Name" placeholder="Имя *" required="" id="name-header15-7">
@@ -401,8 +508,8 @@
                         <h4 class="card-title py-3 mbr-fonts-style display-7">
                             Напишите нам в WhatsApp
                         </h4>
-                        <a class="mbr-text mbr-fonts-style display-5" href="tel: +7(912) 812-12-12" style="color: black !important;">
-                           +7(912) 812-12-12
+                        <a class="mbr-text mbr-fonts-style display-5" href="https://api.whatsapp.com/send?phone=79855395050" style="color: black !important;">
+                           +7(985) 539-50-50
                         </a>
                     </div>
                 </div>
@@ -415,8 +522,8 @@
                         <h4 class="card-title py-3 mbr-fonts-style display-7">
                             Или в Viber
                         </h4>
-                        <a class="mbr-text mbr-fonts-style display-5" href="tel: +7(912) 812-12-12" style="color: black !important;">
-                            +7(912) 812-12-12
+                        <a class="mbr-text mbr-fonts-style display-5" href="viber://add?number=79855395050" style="color: black !important;">
+                            +7(985) 539-50-50
                         </a>
                     </div>
                 </div>
@@ -455,14 +562,24 @@
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <h5 class="pb-3">Адрес</h5>
-                <p class="mbr-text">Литва, Каунас,<br>Проспект Тайкос 135 В</p>
+                <p class="mbr-text"><i class="mbri-pin mbr-iconfont mbr-iconfont-btn" style="font-size: 30px;"></i> Литва, Каунас,<br>Проспект Тайкос 135 В</p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <h5 class="pb-3">
                     Контакты</h5>
                 <p class="mbr-text">
-                    Email: support@gmail.com
-                    <br>WhatsApp: +79121231212<br>Viber: +79121231212<br>Telegram: +79121231212</p>
+                    <i class="mbri-letter mbr-iconfont mbr-iconfont-btn" style="font-size: 30px;"></i>&nbsp;&nbsp;&nbsp;&nbsp;support@gmail.com
+                    <br>
+                    <img src="assets/images/whatsapp.png" alt="" style="height: 35px; width: auto;">
+                    <a href="https://api.whatsapp.com/send?phone=79855395050" style="color: white !important;">
+                        &nbsp;&nbsp;+7 (985) 539-50-50
+                    </a>
+                    <br>
+                    <img src="assets/images/viber.png" alt="" style="height: 35px; width: auto;">
+                    <a href="viber://add?number=79855395050" style="color: white !important;">
+                        &nbsp;&nbsp;+7 (985) 539-50-50
+                    </a>
+                </p>
             </div>
             <div class="col-12 col-md-3 mbr-fonts-style display-7">
                 <h5 class="pb-3">Информация</h5>
@@ -505,8 +622,7 @@
   <script src="assets/gallery/player.min.js"></script>
   <script src="assets/gallery/script.js"></script>
   <script src="assets/formoid/formoid.min.js"></script>
-  
-  
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
+  <script src="assets/mobirise/js/script.js"></script>
+
   </body>
 </html>
